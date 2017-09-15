@@ -128,6 +128,12 @@ function generatePassword(){
 }
 //==================================================================
 $(document).ready( function() { 
+    $(document).on("hidden.bs.modal", function (e) {
+        if (e.target.id == 'modalWm' || e.target.id == 'modalWmLg' || e.target.id == 'vmConsole'){
+            $(e.target).removeData("bs.modal").find(".modal-content").empty();
+        }
+    });
+
     $('#RefreshButton').click(function(e) {
         e.preventDefault(); 
         refresh_screen();
