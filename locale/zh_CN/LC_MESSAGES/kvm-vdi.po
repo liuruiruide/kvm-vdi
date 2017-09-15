@@ -1,0 +1,784 @@
+# Chinese translations for PACKAGE package
+# PACKAGE 软件包的简体中文翻译.
+# Copyright (C) 2009 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#  <bonc@localhost.localdomain>, 2009.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-04-10 20:56+0800\n"
+"PO-Revision-Date: 2017-04-10 21:00+0800\n"
+"Last-Translator:  <bonc@localhost.localdomain>\n"
+"Language-Team: Chinese\n"
+"Language: zh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+ 
+
+#: about.php 
+#: line:31
+msgid "KVM-VDI"
+msgstr "虚拟机管理平台"
+
+#:line:40
+msgid "Vilnius University."
+msgstr "维尔纽斯大学"
+
+msgid "Center of Information Technology Development."
+msgstr "信息技术发展的中心"
+
+#line: 41
+msgid "Project page"
+msgstr "项目页面"
+
+#line:42
+msgid "Vilnius, Litnuania"
+msgstr "维尔纽斯,Litnuania"
+
+#line:51
+msgid "Close"
+msgstr "关闭"
+
+
+#: add_ad_group.php
+#:line:31
+msgid "Add ActiveDirectory group"
+msgstr "添加Windows域"
+
+#line:38
+msgid "Name"
+msgstr "名称"
+
+#line:55
+msgid "Save changes"
+msgstr "保存更改"
+
+#line:81
+msgid "Grpup already exists."
+msgstr "域已经存在。"
+
+#line:85
+msgid "Groupname field is empty."
+msgstr "域名字段是空的。"
+
+#line:97
+msgid "Success"
+msgstr "成功"
+
+msgid "home"
+msgstr "主页"
+
+
+
+#：add_credential_20170214.php
+#：line:36
+msgid "Add new administrator"
+msgstr "添加管理员"
+
+#line:38
+msgid "Add new client"
+msgstr "添加新客户端"
+
+#line:47
+msgid "Username"
+msgstr "用户名"
+
+#line:57
+msgid "Password"
+msgstr "密码"
+
+#line:59
+msgid "Generate password"
+msgstr "重置密码"
+
+#line:127
+msgid "Username already exists."
+msgstr "用户名已经存在。"
+
+#line:131
+msgid "Username field is empty."
+msgstr "用户名字段是空的。"
+
+#line:135
+msgid "Password field is empty."
+msgstr "密码字段是空的。"
+
+#line:139
+msgid "Address field is empty."
+msgstr "地址栏是空的。"
+
+
+
+#:add_hypervisor.php
+#:line:31
+msgid "Add new hypervisor"
+msgstr "添加虚拟化主机"
+
+#:line:47
+msgid "SSH port. Leave empty for default."
+msgstr "SSH端口。默认端口请留空。"
+
+#:line:56
+msgid "Hypervisor address for thin client network (if differs)."
+msgstr "虚拟机监控程序为瘦客户端网络地址(如果不同)。"
+
+#:line:65
+msgid "Hypervisor name (optional)."
+msgstr "虚拟化主机名称(可选)。"
+
+#:line:74
+msgid "Contacting hypervisor"
+msgstr "联系管理程序"
+
+
+#:line:112
+msgid "Invalid hypervisor address."
+msgstr "无效的虚拟化主机地址。"
+
+#:line:115
+msgid "Invalid hypervisor credentials."
+msgstr "无效的虚拟机化主机凭证。"
+
+#:line:119
+msgid "Hypervisor already exists."
+msgstr "虚拟化主机已经存在。"
+
+#:line:123
+msgid "sudo failed. Please check your configuration."
+msgstr "提升权限失败。请检查您的配置。"
+
+
+#:add_pool.php
+#:line:31
+msgid "Add new pool"
+msgstr "添加资源池"
+
+
+
+
+#:line:81
+msgid "Pool already exists."
+msgstr "资源池已经存在。"
+
+#:line:85
+msgid "Poolname field is empty."
+msgstr "资源池名称字段是空的。"
+
+
+#:change_password.php
+#:line:32
+msgid "Change password"
+msgstr "更改密码"
+
+#:line:39
+msgid "Enter password"
+msgstr "输入密码"
+
+#:line:46
+msgid "Repeat password"
+msgstr "重复密码"
+
+
+
+#:line:76
+msgid "'<strong>Error!</strong> Empty password.'"
+msgstr "'<strong>错误!</strong> 空密码。'"
+
+
+#:line:84
+msgid "'<strong>Error!</strong> Passwords do not match.'"
+msgstr "'<strong>错误!</strong> 密码不匹配。'"
+
+
+#：client_index.php
+#:line:39
+msgid "KVM-VDI client area"
+msgstr "虚拟机管理平台客户端"
+
+#:line:57
+msgid "Sign In"
+msgstr "登录"
+
+#:line:59
+msgid "Wrong username/password"
+msgstr "错误的用户名/密码"
+
+#:client_pools.php
+#:line:115
+msgid "Please wait"
+msgstr "请稍等"
+
+#:line:193
+msgid "Warning!"
+msgstr "警告!"
+
+#:line:193
+msgid "No VMs available. System in maintenance mode."
+msgstr "没有虚拟机可用。系统在维护模式。"
+
+
+
+#:line:203
+msgid "No free VMs available."
+msgstr "没有空闲的虚拟机可用。"
+
+#:dashboard.php
+#:line:107
+msgid "All virtual machines will be powered off and their initial snapshots recreated.\\nProceed?"
+msgstr "所有虚拟机都将关闭,他们最初的重新创建快照。\\n确定?"
+
+
+#:line：121
+msgid "All VDI machines will be deleted.\\nProceed?"
+msgstr "所有VDI虚拟机将被删除。\\n确定?"
+
+#:line:213
+msgid "Refresh VM info"
+msgstr "刷新虚拟机信息"
+
+#:line:237
+msgid "Clients"
+msgstr "客户端管理"
+
+#:line:239
+msgid "Add client"
+msgstr "添加客户端"
+
+
+#:line:254
+msgid "Add pool"
+msgstr "添加资源池"
+
+#:line:255
+msgid "Manage pools"
+msgstr "管理资源池"
+
+#:line:256
+msgid "Add VMs to pool"
+msgstr "添加虚拟机池"
+
+#:line:257
+msgid "Add clients to pool"
+msgstr "添加客户池"
+
+#:line:266
+msgid "Create Virtual Machines"
+msgstr "创建虚拟机"
+
+#:line:268
+msgid "Tools"
+msgstr "工具"
+
+#:line:270
+msgid "Generate DHCP config"
+msgstr "生成DHCP配置"
+
+#:line:274
+msgid "System"
+msgstr "系统"
+
+#:line:276
+msgid "Add hypervisor"
+msgstr "添加虚拟化主机"
+
+#:line:277
+msgid "Modify hypervisors"
+msgstr "修改虚拟化主机"
+
+#:line:279
+msgid "Add administrator"
+msgstr "添加管理员"
+
+
+#:line:286
+msgid "Profile"
+msgstr "配置文件"
+
+
+#:line:289
+msgid "Logout"
+msgstr "注销"
+
+#:dhcpconf_gen.php
+
+#:line:35
+msgid "Available Vms:"
+msgstr "可用虚拟机:"
+
+#:line:47
+msgid "Generate config for:"
+msgstr "生成配置:"
+
+#:line:51
+msgid "DHCP configuration:"
+msgstr "DHCP配置:"
+
+#:line:61
+msgid "Start IP address"
+msgstr "启动IP地址"
+
+#:line:74
+msgid "Generate"
+msgstr "生成"
+
+
+#:index.php
+#:line:44
+msgid "KVM-VDI administrator portal"
+msgstr "虚拟机管理平台管理员门户"
+
+
+#:line：63
+msgid "Go to client area"
+msgstr "客户端登录"
+
+
+#list_credentials.php
+#:line:44
+msgid "Manage clients"
+msgstr "管理客户"
+
+#:line:46
+msgid "Manage AD groups"
+msgstr "管理广告组"
+
+#:line:48
+msgid "Manage administrators"
+msgstr "管理管理员"
+
+#:line:120
+msgid "Password changed to:"
+msgstr "密码更改为:"
+
+#: vm_info.php
+#:line 59
+msgid "Linux"
+msgstr "Linux"
+
+#:line 60
+msgid "Windows"
+msgstr "Windows"
+
+#:line 70
+msgid "MAC address"
+msgstr "MAC地址"
+
+#:line 79
+msgid "Machine type:"
+msgstr "虚拟机类型"
+
+#:line 82
+msgid "Please select machine type"
+msgstr "请选择虚拟机类型"
+
+#:line 83
+msgid "Simple machine"
+msgstr "常规型"
+
+#:line 84
+msgid "Initial machine"
+msgstr "初始化型"
+
+#:line 85
+msgid "Source machine"
+msgstr "源型"
+
+#:line 85
+msgid "VDI machine"
+msgstr "VDI型"
+
+#:line 103
+msgid "Use virtual snapshots"
+msgstr "使用虚拟快照"
+
+#: update_pools.php
+#:line 16
+msgid "EMPTY_POOL"
+msgstr "空池"
+
+#:line 21
+msgid "EXISTS"
+msgstr "退出"
+
+
+#: update_hypervisors.php
+#:line 17
+msgid "EMPTY_ADDRESS"
+msgstr "空地址"
+
+
+#:line 31
+msgid "SUDO_FAILURE"
+msgstr "提升权限失败"
+
+
+#:update_ad_groups.php
+#:line 16
+msgid "EMPTY_GROUP"
+msgstr "空分组"
+
+
+
+
+#:new_vm.php
+#:line 38
+msgid "Create virtual machine(s)"
+msgstr "创建新的虚拟机"
+
+
+#:line 50
+msgid "Import from another hypervisor"
+msgstr "从另一个虚拟化主机导入"
+
+#:line 54
+msgid "Target hypervisor"
+msgstr "目标虚拟化主机"
+
+#:line 56
+msgid "Please select hypervisor"
+msgstr "请选择虚拟机管理程序"
+
+#:line 86
+msgid "Specify disk path:"
+msgstr "指定的磁盘路径"
+
+#:line 90
+msgid "Disk size"
+msgstr "磁盘容量"
+
+#:line 101
+msgid "Mount CD iso:"
+msgstr "安装光盘ISO"
+
+#:line 107
+msgid "Select ISO image"
+msgstr "选择ISO镜像"
+
+#:line 127
+msgid "Hardware info:"
+msgstr "硬件信息"
+
+#:line 130
+msgid "Sockets"
+msgstr "CPU个数"
+
+#:line 134
+msgid "Cores"
+msgstr "CPU核心数/每个CPU"
+
+#:line 138
+msgid "GB RAM"
+msgstr "运行内存"
+
+#:line 142
+msgid "Network"
+msgstr "网络"
+
+#:line 148
+msgid "OS type"
+msgstr "操作系统的类型"
+
+#:line 150
+msgid "Please select OS type"
+msgstr "请选择操作系统类型"
+
+
+
+#:line 156
+msgid "Version"
+msgstr "版本"
+
+#:line 158
+msgid "Please select version"
+msgstr "请选择版本"
+
+#:line 179
+msgid "Mass deployment"
+msgstr "大规模部署"
+
+#:line 184
+msgid "Prepend machine name"
+msgstr "机器名"
+
+#:line 188
+msgid "Number of machines to create"
+msgstr "创建机器的数量"
+
+#:line 194
+msgid "Source hypervisor"
+msgstr "来源虚拟化主机"
+
+
+#:line 210
+msgid "Source VM"
+msgstr "源虚拟机"
+
+#:line 219
+msgid "Attention: this assumes, that VM image is on shared storage and is accesible on target hypervisor."
+msgstr "注意：这个假设，虚拟机镜像保存在可共享的存储上是可行的"
+
+#:manage_vm_pool.php
+
+
+#:line 59
+msgid "Vms in pool"
+msgstr "虚拟机池"
+
+
+
+#:line 30
+msgid "Available clients"
+msgstr "现有的客户端"
+
+#:line 42
+msgid "Clients in pool"
+msgstr "客户端池"
+
+#:line 48
+msgid "Pool"
+msgstr "池"
+
+#:line 65
+msgid "Submit"
+msgstr "提交"
+
+
+#functions.php
+#:line 91
+msgid "KVM-VDI is unable to connect to hypervisor with address: "
+msgstr "虚拟机管理平台无法连接到虚拟化主机"
+
+#:line 182
+msgid "Shutdown machine"
+msgstr "关闭虚拟机"
+
+#:line 237
+msgid "Congratulations! Installation was successfull. Now you should add hypervisors to your dashboard."
+msgstr "祝贺你!安装成功。现在你可以添加管理程序。"
+
+#:line 250
+msgid "Hypervisor:"
+msgstr "虚拟化主机:"
+
+#:line 252
+msgid "Enabled"
+msgstr "可用"
+
+#:line 254
+msgid "Disabled"
+msgstr "不可用"
+
+
+#:line 264
+msgid "Machine name"
+msgstr "机器名"
+
+#:line 265
+msgid "Machine type"
+msgstr "虚拟机类型"
+
+#:line 266
+msgid "Source image"
+msgstr "源镜像"
+
+#:line 267
+msgid "Virt-snapshot"
+msgstr "虚拟快照"
+
+#:line 268
+msgid "Maintenance"
+msgstr "维护"
+
+#:line 269
+msgid "Operations"
+msgstr "操作"
+
+#:line 270
+msgid "OS type/Status/Used by"
+msgstr "操作系统/状态/使用者"
+
+#:line 285
+msgid "Shutoff"
+msgstr "关闭"
+
+#:line 290
+msgid "Running"
+msgstr "运行"
+
+#:line 293
+msgid "Paused"
+msgstr "暂停"
+
+
+#:line 297
+msgid "Suspended"
+msgstr "挂起"
+
+#:line 301
+msgid "Unknown"
+msgstr "未知"
+
+#:line 345
+msgid "VDI control"
+msgstr "VDI控制器"
+
+#:line 348
+msgid "Copy disk from source"
+msgstr "从源虚拟机复制磁盘"
+ 
+#:line 350
+msgid "Turn maintenance on"
+msgstr "打开维护模式"
+
+#:line 351
+msgid "Turn maintenance off"
+msgstr "关闭维护模式"
+
+#:line 353
+msgid "Populate machines"
+msgstr "填充虚拟机"
+
+#:line 355
+msgid "Mass power on"
+msgstr "批量开机"
+
+#:line 356
+msgid "Mass shut down (soft)"
+msgstr "批量关闭(软)"
+
+#:line 357
+msgid "Mass shut down (forced)"
+msgstr "批量关闭(强制)"
+
+#:line 359
+msgid "Turn on snapshots"
+msgstr "打开快照"
+
+#:line 360
+msgid "Turn off snapshots"
+msgstr "关闭快照"
+
+#:line 362
+msgid "Delete all child VMs"
+msgstr "删除所有下属虚拟机"
+
+#:line 365
+msgid "VM locked"
+msgstr "锁定VM"
+
+#:line 375
+msgid "VM Actions"
+msgstr "虚拟机动作"
+
+#:line 384
+msgid "Open Console"
+msgstr "打开控制台"
+
+#:line 386
+msgid "Are you sure"
+msgstr "确定"
+
+#:line 393
+msgid "Delete machine"
+msgstr "删除机器"
+
+#:line 393
+msgid "VM name: "
+msgstr "虚拟机的名字："
+
+#:line 572
+msgid "SPICE console"
+msgstr "在SPICE客户端打开"
+
+#:line 573
+msgid "HTML5 console"
+msgstr "在网页中打开"
+
+#：NewVM.php
+#:line 58
+msgid "Use volume from:"
+msgstr "使用量"
+
+#:line 62
+msgid "Please select source"
+msgstr "请选择源"
+
+#functions.php
+#:line 434
+msgid "VM screen"
+msgstr "虚拟机的屏幕"
+
+
+#NewVM.php
+#:line 42
+msgid "Networks:"
+msgstr "网络"
+
+#:line 51
+msgid "System info:"
+msgstr "系统信息"
+
+#:line 62
+msgid "Flavors"
+msgstr "特征"
+
+#:line 85
+msgid "Create VMs"
+msgstr "创建虚拟机"
+
+
+#add by liur
+msgid "VDI dashboard"
+msgstr "虚拟机管理平台"
+
+msgid "VDI name"
+msgstr "VDI虚拟机名称"
+
+msgid "Nobody"
+msgstr "无"
+
+msgid "Actions"
+msgstr "动作"
+
+msgid "VM locked:"
+msgstr "锁定虚拟机"
+
+msgid "Open console"
+msgstr "打开控制台"
+
+msgid "Soft shut down"
+msgstr "关闭"
+
+msgid "Forced shut down"
+msgstr "强制关闭"
+
+msgid "edit graphics card"
+msgstr "编辑显卡信息"
+
+msgid "Add AD group"
+msgstr "添加AD域"
+
+msgid "Add AD group to pool"
+msgstr "添加AD域至资源池"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -15,6 +15,7 @@ if (check_db()<1){
     header("Location:  $serviceurl/install/");
     exit;
     }
+set_lang();
 ?>
 <!DOCTYPE html>
 <html lang="en">

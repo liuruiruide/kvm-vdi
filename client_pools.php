@@ -171,7 +171,7 @@ var retries=4;
 var checker_object;
 var screen_object;
 var engine = '<?php echo $engine;?>';
-var use_kvmvdi_html5_client = '<?php echo $use_kvmvdi_html5_client;?>';
+var use_kvmvdi_html5_client = '<?php  if($engine == 'OpenStack'){ echo $use_kvmvdi_html5_client;} else {echo "";}?>';
 var client_url = '';
 if (engine == 'OpenStack'){
     client_url = 'inc/infrastructure/OpenStack/GetClientConnection.php';
@@ -202,9 +202,10 @@ function call_vm(poolid){
             if (vm.status=='OK'){
                 vm_booted=1;
                 clearInterval(checker_object);
-                if (engine != 'OpenStack')
-                    send_token(<?php echo "'" . $websockets_address . "', '" . $websockets_port . "', ";?>vm.name,vm.address,vm.spice_password);
-                else if (engine == 'OpenStack' && use_kvmvdi_html5_client){
+                if (engine != 'OpenStack') {
+		    send_token(<?php echo "'" . $websockets_address . "', '" . $websockets_port . "', ";?>vm.name,vm.address,vm.spice_password);
+		    
+                } else if (engine == 'OpenStack' && use_kvmvdi_html5_client){
                     send_token(vm.address, vm.port, vm.token, vm.value, vm.spice_password);
                 }
                 else{

@@ -245,7 +245,7 @@ set_lang();
 			<li class="nav"><a href="add_pool.php" data-toggle="modal" data-target="#modalWm"><i class="fa fa-cloud fa-fw"></i><?php echo _("Add pool");?></a></li>
 			<li class="nav"><a href="list_credentials.php?credential_type=pool" data-toggle="modal" data-target="#modalWm"><i class="fa fa-recycle fa-fw"></i><?php echo _("Manage pools");?></a></li>
 			<li class="nav"><a href="manage_vm_pool.php" data-toggle="modal" data-target="#modalWm"><i class="fa fa-desktop fa-fw"></i><?php echo _("Add VMs to pool");?></a></li>
-			<li class="nav"><a href="manage_client_pool.php" data-toggle="modal" data-target="#modalWm"><i class="fa fa-male fa-fw"></i></i><?php echo _("Add clients to pool");?></a></li>
+			<li class="nav"><a href="manage_client_pool.php" data-toggle="modal" data-target="#modalWm"><i class="fa fa-male fa-fw"></i><?php echo _("Add clients to pool");?></a></li>
 			<?php 
 				if ($LDAP_backend=='activedir')
 				    echo '<li class="nav"><a href="manage_client_pool.php?type=ad" data-toggle="modal" data-target="#modalWm"><i class="glyphicon glyphicon-user fa-fw"></i>' .  _("Add AD group to pool") . '</a></li>';
@@ -271,6 +271,16 @@ set_lang();
                 <li class="nav"><a href="add_hypervisor.php" data-toggle="modal" data-target="#modalWm"><i class="fa fa-database fa-fw"></i>' . _("Add hypervisor") . '</a></li>
                 <li class="nav"><a href="list_hypervisors.php" data-toggle="modal" data-target="#modalWm"><i class="fa fa-cloud fa-fw"></i>' . _("Modify hypervisors") . '</a></li>
                 <li class="nav-divider"></li>';}?>
+                <!-- add by liur for  -->
+                <?php
+                if  ($engine != 'OpenStack'){
+                echo '
+                <li class="nav"><a href="graphics_card.php" data-toggle="modal" data-target="#modalWm"><i class="fa fa-cogs fa-fw"></i>'. _("edit graphics card").'</a></li></li>
+                <li class="nav-divider"></li>
+                ';
+                }
+                ?>
+		
                 <li class="nav"><a href="add_credential.php?credential_type=user" data-toggle="modal" data-target="#modalWm"><i class="fa fa-user-plus fa-fw"></i><?php echo _("Add administrator");?></a></li>
                 <li class="nav"><a href="list_credentials.php?credential_type=user" data-toggle="modal" data-target="#modalWm"><i class="fa fa-recycle fa-fw"></i><?php echo _("Manage administrators");?></a></li>
                 <li class="nav-divider"></li>

@@ -1,0 +1,1 @@
+ALTER TABLE `vms` ADD `graphics` INT(11) NULL DEFAULT NULL ;

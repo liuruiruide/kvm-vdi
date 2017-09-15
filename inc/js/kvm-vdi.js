@@ -8,6 +8,9 @@ function send_token(websockets_address, websockets_port,token,value,spice_passwo
         },
         success:function (data) {
             if (data=='OK'){
+		if(spice_password == ""){
+		spice_password = "none";
+		}
                  window.open("spice_html5/?host="+websockets_address+"&port="+websockets_port+"?password="+spice_password+"&vmInfoToken="+token);
                 $('#loadingVM').modal('hide');
             }

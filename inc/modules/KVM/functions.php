@@ -15,7 +15,8 @@ function ssh_connect($address){
     $connection = ssh2_connect($ip, $port, array('hostkey'=>'ssh-rsa'));
     if (!$connection)
         return 'BAD_SSH_ADDRESS';
-    if (!ssh2_auth_pubkey_file($connection, $ssh_user, $ssh_key_path.'id_rsa.pub',$ssh_key_path.'id_rsa'))
+    //if (!ssh2_auth_pubkey_file($connection, $ssh_user, $ssh_key_path.'id_rsa.pub',$ssh_key_path.'id_rsa'))
+    if (!ssh2_auth_password($connection, $ssh_user, $ssh_passwd))
         return 'BAD_SSH_CREDENTIALS';
 
 }
@@ -442,7 +443,7 @@ function vmPowerCycle($hypervisor, $vm, $action, $state){
     if ($action=="mass_on" || $action == "mass_off" || $action == "mass_destroy"){
         $child_vms=get_SQL_array("SELECT name,os_type FROM vms WHERE source_volume='$vm'");
         $x=0;
-        while ($child_vms[$x]['name']){
+        while (isset($child_vms[$x]['name'])){
             if ($action=="mass_on"){
                 $agent_command=json_encode(array('vmname' => $child_vms[$x]['name'], 'username' => '', 'password' => '', 'os_type' => $child_vms[$x]['os_type']));
                 ssh_command('echo "' . addslashes($agent_command) . '"| socat /usr/local/VDI/kvm-vdi.sock - ',true);
