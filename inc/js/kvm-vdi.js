@@ -128,7 +128,8 @@ function generatePassword(){
 }
 //==================================================================
 $(document).ready( function() { 
-    $('#RefreshButton').click(function() {
+    $('#RefreshButton').click(function(e) {
+        e.preventDefault(); 
         refresh_screen();
     });
 
