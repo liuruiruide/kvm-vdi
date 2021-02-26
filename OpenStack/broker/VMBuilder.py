@@ -48,21 +48,21 @@ class VMBuilder(threading.Thread):
             try:
                 response = self.http_session.post(Variables.dashboard_path + "inc/infrastructure/OpenStack/GetVMInfo.php", data = {'vm_id': new_vm_id}, verify=False, headers=Variables.http_headers).text
                 reply = json.loads(response)
-            except:
-                logger.debug("Got error in dashboard response: %s", response)
-            if reply['server'].get('status', None) == 'ACTIVE' and new_vm_power:
-                #shutdown newly created vm:
-                logger.debug("Powering off VM %s", new_vm_id)
-                self.http_session.post(Variables.dashboard_path + "inc/infrastructure/OpenStack/PowerCycle.php", data = {'vm_id': new_vm_id, 'power_state': 'down'}, verify=False, headers=Variables.http_headers)
-                new_vm_power = 0
-            elif reply['server'].get('status', None) == 'SHUTOFF':
+                if reply['server'].get('status', None) == 'ACTIVE' and new_vm_power:
+                    #shutdown newly created vm:
+                    logger.debug("Powering off VM %s", new_vm_id)
+                    self.http_session.post(Variables.dashboard_path + "inc/infrastructure/OpenStack/PowerCycle.php", data = {'vm_id': new_vm_id, 'power_state': 'down'}, verify=False, headers=Variables.http_headers)
+                    new_vm_power = 0
+                elif reply['server'].get('status', None) == 'SHUTOFF':
+                    break
+            except Exception, err:
+                logger.error("Got error in dashboard response: %s %s", err, reply)
                 break
+
             if Variables.terminate:
                 break
             time.sleep(5)
-        #print (Variables.vms_to_build)
         Variables.vms_to_build.pop(self.osInstanceId, None)
         self.http_session.post(Variables.dashboard_path + "inc/infrastructure/OpenStack/UpdateMaintenance.php", data = {'vm_id': new_vm_id, 'state':'false'}, verify=False, headers=Variables.http_headers)
-#        self.http_session.post(Variables.dashboard_path + "inc/infrastructure/OpenStack/UpdateMaintenance.php", data = {'vm_id': self.osInstanceId, 'state':'false'}, verify=False, headers=Variables.http_headers)
         logger.debug("Finishing thread")
         #print (Variables.vms_to_build)
